@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  -webkit-app-region: drag; /* Allows the electron window to be draggable */
+}
+
+.App-link {
+  color: #61dafb;
+}
