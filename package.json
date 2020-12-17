@@ -1,6 +1,6 @@
 {
   "name": "lastship",
-  "productName": "LastShip App",
+  "productName": "LastShip App / OneShip App",
   "main": "electron/main.js",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "export BROWSER=none && react-scripts start",
-    "electron": "export ELECTRON_START_URL=http://localhost:3000 && nodemon node_modules/.bin/electron .",
+    "start": "cross-env BROWSER=none react-scripts start",
+    "electron": "cross-env ELECTRON_START_URL=http://localhost:3000 && nodemon --watch ./electron --exec \"electron .\"",
+    "dev": "cross-env ELECTRON_START_URL=http://localhost:3000 &&, nodemon --watch . --exec \"electron . --debug\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -56,5 +57,8 @@
     "env": {
       "__DEV__": "true"
     }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
