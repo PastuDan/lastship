@@ -1,6 +1,6 @@
 {
-  "name": "lastship",
-  "productName": "LastShip App / OneShip App",
+  "name": "oneship",
+  "productName": "OneShip App",
   "main": "electron/main.js",
   "version": "0.1.0",
   "private": true,
